@@ -39,10 +39,11 @@ def get_date_employee_dict(data):
 
     for row in reader:
         row_date = datetime.datetime.strptime(row[3], '%Y-%m-%d').date()
+        employee_name = row[0] + ' ' + row[1]
         #print(row_date)
         if row_date not in dict:
             dict[row_date] = []
-        dict[row_date].append(row[0])
+        dict[row_date].append(employee_name[0])
     '''
     for d,e in dict.items():
         print(f"{d}: {e}")
