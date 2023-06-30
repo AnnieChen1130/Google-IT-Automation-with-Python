@@ -1,3 +1,12 @@
+# Using Python to Interact with the Operating System
+### Course Practice and Labs
+## Course Practice
+- check health
+- 
+
+
+
+## Labs
 - No Lab 1
 - Lab 2: Handling Files
 - Lab 3: Working with Regular Expressions
