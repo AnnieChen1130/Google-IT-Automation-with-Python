@@ -168,9 +168,8 @@ Enter a commit message and save it by pressing Ctrl-o and the Enter key. To exit
 
 We will push these changes later in the lab.
 
-## Create a new file and commit it to the repository
 
-Add an empty file to the repository through web UI
+## Add an empty file to the repository through web UI
 Now, let's create an empty file on the remote repository using the Github website.
 
 Go to your repository on the Github website and click on the Add file button, then click on Create new file. This will open a new page.
