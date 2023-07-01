@@ -23,7 +23,7 @@ The cat command allows us to create single or multiple files, view the contents 
 **cat [file]**
 
 Example:
-![Alt text](Course2-Using-Python-to-Interact-with-the-Operating-System/Lab6-Editing-Files-Using-Substrings/images/cat.png)
+![Alt text](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course2-Using-Python-to-Interact-with-the-Operating-System/Lab6-Editing-Files-Using-Substrings/images/cat.png)
 
 ## grep:
 
