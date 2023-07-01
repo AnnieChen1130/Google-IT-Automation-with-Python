@@ -22,11 +22,11 @@ Forking a repository is a simple two-step process. We've created a repository fo
 On GitHub, navigate to the google/it-cert-automation-practice repository.
 In the top-right corner of the page, click Fork.
 
-![Alt_txt](
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/1.png)
 
 That's it! Now, you have a fork of the original google/it-cert-automation-practice repository.
 
-![Alt_txt](
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/2.png)
 
 First, clone the repository using the following command:
 
@@ -35,7 +35,7 @@ git clone https://github.com/[git-username]/it-cert-automation-practice.git
 Note: If you enabled two-factor authentication in your Github account you won't be able to push via HTTPS using your account’s password. Instead you need to generate a personal access token. This can be done in the application settings of your Github account. Using this token as your password should allow you to push to your remote repository via HTTPS. Use your username as usual. Note down this personal access token as we would need it further in the lab. For more help to generate a personal access token, click here.
 Output:
 
-![Alt_txt](
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/3.png)
 
 Go to the it-cert-automation-practice directory using the following command:
 
@@ -47,7 +47,7 @@ git remote -v
 
 Output:
 
-![Alt_txt](
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/4.png)
 
 In terms of source control, you're "downstream" when you copy (clone, checkout, etc) from a repository. Information is flowed "downstream" to you.
 
@@ -63,7 +63,7 @@ git remote -v
 
 Output:
 
-![Alt_txt](
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/5.png)
 
 ## Configure Git
 Git uses a username to associate commits with an identity. It does this by using the git config command. Set the Git username with the following command:
@@ -99,7 +99,7 @@ ls
 
 Output:
 
-![Alt_txt](
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/6.png)
 
 Now, open the validations.py script.
 
@@ -107,7 +107,7 @@ cat validations.py
 
 Output:
 
-![Alt_txt](
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/7.png)
 
 This script should validate usernames if they start with an letter only.
 
@@ -133,7 +133,7 @@ python3 validations.py
 
 Output:
 
-![Alt_txt](
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/8.png)
 
 Here, as we see the output, it function returns true even if the username doesnot start with an letter. Here we need to change the check of the first character as only letters are allowed in the first character of the username.
 
@@ -151,7 +151,7 @@ python3 validations.py
 
 Output:
 
-![Alt_txt](
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/10.png)
 
 Now, you've fixed the function behavior!
 
@@ -164,7 +164,7 @@ The git status command shows the different states of the files in your working d
 
 You can now see that the validations.py has been modified.
 
-![Alt_txt](
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/11.png)
 
 Now, let's add the file to the staging area using the following command:
 
@@ -176,7 +176,7 @@ git status
 
 Output:
 
-![Alt_txt](
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/12.png)
 
 Let's now commit the changes. A git commit is like saving your work.
 
@@ -198,7 +198,7 @@ Once you've entered the commit message, save it by pressing Ctrl-o and the Enter
 
 Output:
 
-![Alt_txt](
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/13.png)
 
 ## Push changes
 You forked a repository and made changes to the fork. Now you can ask that the upstream repository accept your changes by creating a pull request. Now, let's push the changes.
@@ -209,7 +209,7 @@ Note: If you have enabled two-factor authentication in your Github account, use 
 
 Output:
 
-![Alt_txt](
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/14.png)
 
 Then, from GitHub, create a pull request from your forked repository [git-username]/it-cert-automation-practice that includes a description of your change. Your branch improve-username-behavior is now able to merge into the master branch. It should look like the image below:
 
