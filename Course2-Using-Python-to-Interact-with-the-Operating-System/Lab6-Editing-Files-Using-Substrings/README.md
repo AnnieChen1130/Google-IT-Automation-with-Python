@@ -21,43 +21,38 @@ For this lab, you should have a sound knowledge of these Linux commands:
 The cat command allows us to create single or multiple files, view the contents of a file, concatenate files, and redirect output in terminal or other files.
 
 Syntax:
-
-cat [file]
+**cat [file]**
 
 ## grep:
 
 The grep command, which stands for "global regular expression print", processes text line-by-line and prints any lines that match a specified pattern.
 
 Syntax:
-
-grep [pattern] [file-directory]
+**grep [pattern] [file-directory]**
 
 Here, [file-directory] is the path to the directory/folder where you want to perform a search operation. The grep command is also used to search text and match a string or pattern within a file.
 
 Syntax:
-
-grep [pattern] [file-location]
+**grep [pattern] [file-location]**
 
 ## cut:
 
 The cut command extracts a given number of characters or columns from a file. A delimiter is a character or set of characters that separate text strings.
 
 Syntax:
-
-cut [options] [file]
+**cut [options] [file]**
 
 For delimiter separated fields, the - d option is used. The -f option specifies the field, a set of fields, or a range of fields to be extracted.
 
 Syntax:
-
-cut -d [delimiter] -f [field number]
+**cut -d [delimiter] -f [field number]**
 
 ## Linux I/O Redirection
 Redirection is defined as switching standard streams of data from either a user-specified source or user-specified destination. Here are the following streams used in I/O redirection:
 
-Redirection into a file using >
+Redirection into a file using **>**
 
-Append using >>
+Append using **>>**
 
 Redirection into a file
 
@@ -65,10 +60,10 @@ Each stream uses redirection commands. A single greater than sign (>) or a doubl
 
 Commands with a single greater than sign (>) overwrite existing file content.
 
-cat > [file]
+**cat > [file]**
 
 Commands with a double greater than sign (>>) do not overwrite the existing file content, but it will append to it.
 
-cat >> [file]
+**cat >> [file]**
 
 So, rather than creating a file, the >> command is used to append a word or string to the existing file.
