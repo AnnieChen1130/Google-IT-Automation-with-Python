@@ -12,11 +12,9 @@ Practice using the cat, grep, and cut commands for file operations
 ### Prerequisites
 For this lab, you should have a sound knowledge of these Linux commands:
 
-cat
-
-grep
-
-cut
+* cat
+* grep
+* cut
 
 ## cat:
 
