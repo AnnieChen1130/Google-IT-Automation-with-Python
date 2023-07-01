@@ -31,7 +31,7 @@ Enter your name at the prompt.
 
 The output should throw an error as shown below:
 
-![Alt_txt](
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course4-Troubleshooting-and-Debugging-Techniques/Lab1-Debugging-Python-Scripts/image/1.png)
 
 Great job! You have successfully reproduced the error.
 
@@ -40,7 +40,7 @@ Now that we have successfully reproduced the error, let's find its root cause.
 
 The error message indicates that something in the code is trying to concatenate a string and an integer.
 
-![Alt_txt](
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course4-Troubleshooting-and-Debugging-Techniques/Lab1-Debugging-Python-Scripts/image/2.png)
 
 When we look at the code, we can see that there are two different data types used, string and int. The variable name takes string values and the variable number stores integer (int) values.
 
@@ -75,4 +75,4 @@ Now run the file again.
 
 Enter your name for the prompt. You should now see the correct output.
 
-![Alt_txt](
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course4-Troubleshooting-and-Debugging-Techniques/Lab1-Debugging-Python-Scripts/image/3.png)
