@@ -1,1 +1,1 @@
-image for readme
+image for lab6 README
