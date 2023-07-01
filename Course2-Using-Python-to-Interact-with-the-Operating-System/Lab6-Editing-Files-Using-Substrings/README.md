@@ -23,6 +23,9 @@ The cat command allows us to create single or multiple files, view the contents 
 **cat [file]**
 
 Example:
+
+cat list.txt
+
 ![Alt text](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course2-Using-Python-to-Interact-with-the-Operating-System/Lab6-Editing-Files-Using-Substrings/images/cat.png)
 
 ## grep:
@@ -35,6 +38,24 @@ Here, [file-directory] is the path to the directory/folder where you want to per
 
 **grep [pattern] [file-location]**
 
+Example:
+
+Let's try out the commands we learned in the previous section to catch all the "jane" lines.
+
+grep 'jane' ../data/list.txt
+
+This returns all the files with the pattern "jane". It also matches the file that has string "janez" within it.
+
+![Alt_text](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course2-Using-Python-to-Interact-with-the-Operating-System/Lab6-Editing-Files-Using-Substrings/images/catch-all-the-jane-lines.png)
+
+Now, we'll list only the files containing the string "jane" and not include "janez".
+
+grep ' jane ' ../data/list.txt
+
+This now returns only files containing the string "jane".
+
+![Alt-text](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course2-Using-Python-to-Interact-with-the-Operating-System/Lab6-Editing-Files-Using-Substrings/images/catch-jane-only-exclude-janez.png)
+
 ## cut:
 
 The cut command extracts a given number of characters or columns from a file. A delimiter is a character or set of characters that separate text strings.
@@ -44,6 +65,32 @@ The cut command extracts a given number of characters or columns from a file. A 
 For delimiter separated fields, the - d option is used. The -f option specifies the field, a set of fields, or a range of fields to be extracted.
 
 **cut -d [delimiter] -f [field number]**
+
+Next, we'll use the cut command with grep command. For cut command, we'll use the whitespace character (‘ ‘) as a delimiter (denoted by -d) since the text strings are separated by spaces within the list.txt file. We'll also fetch results by specifying the fields using -f option.
+
+Let's fetch the different fields (columns) using -f flag :
+
+grep " jane " ../data/list.txt | cut -d ' ' -f 1
+
+![Alt_text](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course2-Using-Python-to-Interact-with-the-Operating-System/Lab6-Editing-Files-Using-Substrings/images/cut-grep-f1.png)
+
+grep " jane " ../data/list.txt | cut -d ' ' -f 2
+
+![Alt_text](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course2-Using-Python-to-Interact-with-the-Operating-System/Lab6-Editing-Files-Using-Substrings/images/cut-grep-f2.png)
+
+grep " jane " ../data/list.txt | cut -d ' ' -f 3
+
+![Alt_text](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course2-Using-Python-to-Interact-with-the-Operating-System/Lab6-Editing-Files-Using-Substrings/images/cut-grep-f3.png)
+
+You can also return a range of fields together by using:
+
+grep " jane " ../data/list.txt | cut -d ' ' -f 1-3
+
+To return a set of fields together:
+
+grep " jane " ../data/list.txt | cut -d ' ' -f 1,3
+
+
 
 ## Linux I/O Redirection
 Redirection is defined as switching standard streams of data from either a user-specified source or user-specified destination. Here are the following streams used in I/O redirection:
