@@ -9,3 +9,6 @@ In this lab, you will:
 * Write a simple test to check for basic functionality
 * Write a test to check for edge cases
 * Correct code with a try/except statement
+
+Command line in terminal: python3 emails.py Blossom Gill
+This code is written by Qwiklab
