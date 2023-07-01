@@ -151,7 +151,7 @@ python3 validations.py
 
 Output:
 
-![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/10.png)
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/9.png)
 
 Now, you've fixed the function behavior!
 
@@ -164,7 +164,7 @@ The git status command shows the different states of the files in your working d
 
 You can now see that the validations.py has been modified.
 
-![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/11.png)
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/10.png)
 
 Now, let's add the file to the staging area using the following command:
 
@@ -176,7 +176,7 @@ git status
 
 Output:
 
-![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/12.png)
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/11.png)
 
 Let's now commit the changes. A git commit is like saving your work.
 
@@ -198,7 +198,7 @@ Once you've entered the commit message, save it by pressing Ctrl-o and the Enter
 
 Output:
 
-![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/13.png)
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/12.png)
 
 ## Push changes
 You forked a repository and made changes to the fork. Now you can ask that the upstream repository accept your changes by creating a pull request. Now, let's push the changes.
@@ -209,11 +209,11 @@ Note: If you have enabled two-factor authentication in your Github account, use 
 
 Output:
 
-![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/14.png)
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/13.png)
 
 Then, from GitHub, create a pull request from your forked repository [git-username]/it-cert-automation-practice that includes a description of your change. Your branch improve-username-behavior is now able to merge into the master branch. It should look like the image below:
 
-PR
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course3-Introduction-to-Git-and-GitHub/Lab4-Pushing-Local-Commits-to-Github/image/14.png)
 
 After initializing a pull request, you'll see a review page that shows a high-level overview of the changes between your branch (the compare branch) and the repository's base branch. You can add a summary of the proposed changes, review the changes made by commits, add labels, milestones, and assignees, and @mention individual contributors or teams.
 
