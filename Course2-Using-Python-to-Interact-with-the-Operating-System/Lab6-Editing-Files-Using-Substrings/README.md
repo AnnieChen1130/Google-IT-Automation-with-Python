@@ -22,6 +22,9 @@ The cat command allows us to create single or multiple files, view the contents 
 
 **cat [file]**
 
+Example:
+![Alt text](Course2-Using-Python-to-Interact-with-the-Operating-System/Lab6-Editing-Files-Using-Substrings/images/cat.png)
+
 ## grep:
 
 The grep command, which stands for "global regular expression print", processes text line-by-line and prints any lines that match a specified pattern.
