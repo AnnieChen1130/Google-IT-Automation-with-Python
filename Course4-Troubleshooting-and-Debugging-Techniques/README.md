@@ -1,0 +1,4 @@
+- Lab1: Debugging Python Scripts
+- Lab2: Performance Tuning in Python Scripts
+- Lab3: Fixing Errors in Python Scripts
+- Lab4: Debugging and Solving Software Problems
