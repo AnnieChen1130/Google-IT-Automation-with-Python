@@ -22,7 +22,7 @@ The cat command allows us to create single or multiple files, view the contents 
 
 **cat [file]**
 
-Example:
+_Example:_
 
 cat list.txt
 
@@ -38,7 +38,7 @@ Here, [file-directory] is the path to the directory/folder where you want to per
 
 **grep [pattern] [file-location]**
 
-Example:
+_Example:_
 
 Let's try out the commands we learned in the previous section to catch all the "jane" lines.
 
@@ -66,6 +66,8 @@ For delimiter separated fields, the - d option is used. The -f option specifies 
 
 **cut -d [delimiter] -f [field number]**
 
+_Example:_ 
+
 Next, we'll use the cut command with grep command. For cut command, we'll use the whitespace character (‘ ‘) as a delimiter (denoted by -d) since the text strings are separated by spaces within the list.txt file. We'll also fetch results by specifying the fields using -f option.
 
 Let's fetch the different fields (columns) using -f flag :
@@ -91,7 +93,6 @@ To return a set of fields together:
 grep " jane " ../data/list.txt | cut -d ' ' -f 1,3
 
 
-
 ## Linux I/O Redirection
 Redirection is defined as switching standard streams of data from either a user-specified source or user-specified destination. Here are the following streams used in I/O redirection:
 
@@ -113,6 +114,27 @@ Commands with a double greater than sign (>>) do not overwrite the existing file
 
 So, rather than creating a file, the >> command is used to append a word or string to the existing file.
 
+## Create a file using a Redirection operator
+We'll now use the redirection operator (>) to create an empty file simply by specifying the file name. The syntax for this is:
+
+**> [file-name]**
+
+Let's create a file named test.txt using the redirection operator.
+
+**> test.txt**
+
+![Alt_text](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course2-Using-Python-to-Interact-with-the-Operating-System/Lab6-Editing-Files-Using-Substrings/images/Create-a-file-using-a-Redirection-operator.png)
+
+To append any string to the test.txt file, you can use another redirection operator (>>).
+
+**echo "I am appending text to this test file" >> test.txt*
+
+You can view the contents of the file at any time by using the cat command.
+
+**cat test.txt**
+
+![Alt_text](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course2-Using-Python-to-Interact-with-the-Operating-System/Lab6-Editing-Files-Using-Substrings/images/append-any-string-to-the-test-txt-file.png)
+
 ## Test command
 We'll now use the test command to test for the presence of a file. The command test is a command-line utility on Unix-like operating systems that evaluates conditional expressions.
 
@@ -126,26 +148,7 @@ We'll check the existence of a file named jane_profile_07272018.doc using the fo
 
 **if test -e ~/data/jane_profile_07272018.doc; then echo "File exists"; else echo "File doesn't exist"; fi**
 
-## Create a file using a Redirection operator
-We'll now use the redirection operator (>) to create an empty file simply by specifying the file name. The syntax for this is:
-
-**> [file-name]**
-
-Let's create a file named test.txt using the redirection operator.
-
-**> test.txt**
-
-Output:
-
-To append any string to the test.txt file, you can use another redirection operator (>>).
-
-**echo "I am appending text to this test file" >> test.txt**
-
-You can view the contents of the file at any time by using the cat command.
-
-**cat test.txt**
-
-Output:
+![Alt_text](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course2-Using-Python-to-Interact-with-the-Operating-System/Lab6-Editing-Files-Using-Substrings/images/check-the-existence-of-a-file.png)
 
 ## Iteration
 Another important aspect of a scripting language is iteration. Iteration, in simple terms, is the repetition of a specific set of instructions. It's when a set of instructions is repeated a number of times or until a condition is met. And for this process, bash script allows three different iterative statements:
@@ -158,7 +161,7 @@ Let's now iterate over a set of items and print those items.
 
 **for i in 1 2 3; do echo $i; done**
 
-Output:
+![Alt_text](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course2-Using-Python-to-Interact-with-the-Operating-System/Lab6-Editing-Files-Using-Substrings/images/for-loop-scripting.png)
 
 
 
