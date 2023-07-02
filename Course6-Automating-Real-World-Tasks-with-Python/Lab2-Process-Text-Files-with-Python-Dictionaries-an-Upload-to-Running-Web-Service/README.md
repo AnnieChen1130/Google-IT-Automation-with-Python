@@ -9,20 +9,20 @@ What you'll do
 * Use the Python requests module to upload content to a running Web service
 * Understand basic operations for Python requests like GET and POST methods
 
-Web server corpweb
+## Web server corpweb
 Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. A Web framework is a set of components that provide a standard way to develop websites quickly and easily.
 
 For this lab, a Django web server corpweb is already configured under /projects/corpweb directory. You can check it out by visiting the external IP address of the corpweb VM. The external IP address can be found in the connection details panel. Enter the corpweb external IP address in a new separate browser tab.
 
 Output:
 
-6d4dcdc788626521.png
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course6-Automating-Real-World-Tasks-with-Python/Lab2-Process-Text-Files-with-Python-Dictionaries-an-Upload-to-Running-Web-Service/image/1.png)
 
 You'll see that there's currently no feedback.
 
 Now, append /feedback to the external IP address of corpweb VM opened in the browser tab.
 
-4c82e605dae520f3.png
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course6-Automating-Real-World-Tasks-with-Python/Lab2-Process-Text-Files-with-Python-Dictionaries-an-Upload-to-Running-Web-Service/image/2.png)
 
 This is a web interface for a REST end-point. Through this end-point, you can enter feedback that can be displayed on the company's website. You can use this end-point in the example below. Start by copying and pasting the following JSON to the Content field on the website, and click POST.
 
@@ -30,7 +30,7 @@ This is a web interface for a REST end-point. Through this end-point, you can en
 Copied!
 Now, go back to the main page by removing the /feedback from the URL. You can see that the feedback that you just entered is displayed on the webpage.
 
-971893c6631c06f6.png
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course6-Automating-Real-World-Tasks-with-Python/Lab2-Process-Text-Files-with-Python-Dictionaries-an-Upload-to-Running-Web-Service/image/3.png)
 
 The whole website is stored in /projects/corpweb. You're free to look around the configuration files. Also, there's no need to make any changes to the website; all interaction should be done through the REST end-point.
 
@@ -40,20 +40,20 @@ In this section, you'll write a Python script that will upload the feedback auto
 Navigate to /data/feedback directory, where you'll find a few .txt files with customer reviews for the company.
 
 cd /data/feedback
-Copied!
+
 ls
-Copied!
+
 Output:
 
-80676af4c8e69cc4.png
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course6-Automating-Real-World-Tasks-with-Python/Lab2-Process-Text-Files-with-Python-Dictionaries-an-Upload-to-Running-Web-Service/image/4.png)
 
 Use the cat command to view these files. For example:
 
 cat 007.txt
-Copied!
+
 Output:
 
-336fe102a3cdc30b.png
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course6-Automating-Real-World-Tasks-with-Python/Lab2-Process-Text-Files-with-Python-Dictionaries-an-Upload-to-Running-Web-Service/image/5.png)
 
 They're all written in the same format (i.e. title, name, date, and feedback).
 
@@ -62,18 +62,18 @@ Here comes the challenge section of the lab, where you'll write a Python script 
 Now, navigate back to the home directory and create a Python script named run.py using the following command:
 
 cd ~
-Copied!
+
 nano run.py
-Copied!
+
 Add the shebang line:
 
 #! /usr/bin/env python3
-Copied!
+
 The following are a few libraries that will be required for the script. Import them using:
 
 import os
 import requests
-Copied!
+
 The script should now follow the structure:
 
 List all .txt files under /data/feedback directory that contains the actual feedback to be displayed on the company's website.
@@ -92,11 +92,11 @@ Save the run.py script file by pressing Ctrl-o, the Enter key, and Ctrl-x.
 Grant executable permission to the run.py script.
 
 chmod +x ~/run.py
-Copied!
+
 Now, run the run.py script:
 
 ./run.py
-Copied!
+
 Your POST requests should have successfully uploaded the feedback on the company's website. Now, visit the website again using the corpweb external IP address or just refresh the page if already opened, and you should be able to see the feedback.
 
-7639cece365f6956.png
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course6-Automating-Real-World-Tasks-with-Python/Lab2-Process-Text-Files-with-Python-Dictionaries-an-Upload-to-Running-Web-Service/image/6.png)
