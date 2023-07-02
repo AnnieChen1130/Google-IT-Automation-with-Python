@@ -11,37 +11,37 @@ You should have a sound knowledge of the following things prior to performing th
 * Identifying and understanding system performance (I/O, Network, CPU, Memory)
 * Understanding and troubleshooting the environment around the program (file system, OS, etc.)
 
-Debug issue
+## Debug issue
 You have a start_date_report.py Python script with a bunch of functions like get_start_date(), list_newer() and others. This script will operate on the data file employees-with-date.csv, which is generated from a file URI within the script. The script then generates a report of all employees that started on the given start date.
 
 To list the files on the home directory, use the following command:
 
 ls
-Copied!
+
 Output:
 
-1.png
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course4-Troubleshooting-and-Debugging-Techniques/Lab4-Debugging-and-Solving-Software-Problems/image/1.png)
 
 Grant the executable and editable file permission to the start_date_report.py
 
 sudo chmod 777 ~/start_date_report.py
-Copied!
+
 Now, run the python program start_date_report.py
 
 ./start_date_report.py
-Copied!
+
 Enter the values for the year, month, and day respectively as the prompt appears.
 
 Output:
 
-2.png
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course4-Troubleshooting-and-Debugging-Techniques/Lab4-Debugging-and-Solving-Software-Problems/image/2.png)
 
 The program crashes with a TypeError. This is because it reads the value entered at prompts as a string. Refer to the function datetime.datetime() within the script. The arguments passed to the datetime.datetime() function should be of integer type, but in our case, the input values are strings.
 
 In order to fix this ERROR, open start_date_report.py by using the following command:
 
 nano ~/start_date_report.py
-Copied!
+
 Now, search for get_start_date() function and typecast the string variable that’s taken from user input to the integer. Here, we have to explicitly cast the data type of these three variables: year, month, and day from string to integer.
 
 Eg. year = int(input('Enter a value for the year: '))
@@ -50,22 +50,20 @@ Similarly, you can cast the values of month and day to an integer.
 
 The get_start_date() function should now looks like this:
 
-3.png
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course4-Troubleshooting-and-Debugging-Techniques/Lab4-Debugging-and-Solving-Software-Problems/image/3.png)
 
 Save the start_date_report.py script file by clicking Ctrl-o, the Enter key, and Ctrl-x.
 
 Run the start_date_report.py Python script:
 
 ./start_date_report.py
-Copied!
+
 Output:
 
-4.png
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course4-Troubleshooting-and-Debugging-Techniques/Lab4-Debugging-and-Solving-Software-Problems/image/4.png)
 
-Click Check my progress to verify the objective.
-Debug and fix issue
 
-Improve performance
+## Improve performance
 Once you debug the issue, the program will start processing the file but it takes a long time to complete. This is because the program goes slowly line by line instead of printing the report quickly. You need to debug why the program is slow and then fix it. In this section, you need to find bottlenecks, improve the code, and make it finish faster.
 
 The problem with the script is that it’s downloading the whole file and then going over it for each date. The current script takes almost 2 minutes to complete for 2019-01-01. An optimized script should generate reports for the same date within a few seconds.
@@ -75,11 +73,11 @@ To check the execution time of a script, add a prefix "time" and run the script.
 Example:
 
 time ./test.py
-Copied!
+
 In order to fix this issue, open the start_date_report.py script using nano editor. Now, modify the get_same_or_newer() function to preprocess the file, so that the output generated can be used for various dates instead of just one.
 
 nano ~/start_date_report.py
-Copied!
+
 This is a pretty challenging task that you have to complete by modifying the get_same_or_newer() function.
 
 Here are few hints to fix this issue:
@@ -97,9 +95,9 @@ Once you’ve completed modifying the Python script, save the file by clicking C
 Run the start_date_report.py python script:
 
 ./start_date_report.py
-Copied!
+
 Output:
 
-5.png
+![Alt_txt](https://github.com/AnnieChen1130/Google-IT-Automation-with-Python/blob/main/Course4-Troubleshooting-and-Debugging-Techniques/Lab4-Debugging-and-Solving-Software-Problems/image/5.png)
 
 Now, you’ve improved the performance of the script.
