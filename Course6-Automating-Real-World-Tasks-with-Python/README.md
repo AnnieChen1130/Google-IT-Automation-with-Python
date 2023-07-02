@@ -1,0 +1,4 @@
+- Lab1: Scale and convert images using PIL
+- Lab2: Process Text Files with Python Dictionaries and Upload to Running Web Service
+- Lab3: Automatically Generate a PDF and send it by Email
+- Lab4: Automate updating catalog information
