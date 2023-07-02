@@ -24,7 +24,7 @@ def check_memoru_usage():
 #hostname "localhost" cannot be resolved to "127.0.0.1"
 def resolve_hostname():
     hostname = socket.gethostbyname('localhost')
-    return hostname == '127.0.0.1'
+    return hostname != '127.0.0.1'
 
 if __name__ == "__main__":
 
