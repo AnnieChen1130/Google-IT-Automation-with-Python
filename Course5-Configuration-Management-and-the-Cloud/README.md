@@ -1,0 +1,4 @@
+- Lab1: Debugging Puppet Installation
+- Lab2: Deployment Using Puppet
+- Lab3: Create VM template and Automate deployment
+- Lab4: Debugging Cloud Deployment
