@@ -34,7 +34,7 @@ Now, go back to the main page by removing the /feedback from the URL. You can se
 
 The whole website is stored in /projects/corpweb. You're free to look around the configuration files. Also, there's no need to make any changes to the website; all interaction should be done through the REST end-point.
 
-Process text files and upload to running web server
+## Process text files and upload to running web server
 In this section, you'll write a Python script that will upload the feedback automatically without having to turn it into a dictionary.
 
 Navigate to /data/feedback directory, where you'll find a few .txt files with customer reviews for the company.
